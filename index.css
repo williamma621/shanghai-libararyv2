@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+    padding: 60px;
+    display:flex;
+    justify-content: center;
+    background: linear-gradient( 100deg, #f3e7e9, #e3eeff);
+}
+
+.container {
+    padding: 60px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1ecec;
+}
+
+body div h1 {
+    text-align: center;
+}
+
+body div p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+body div button {
+    display:block;
+    margin:0 auto;
+    background-color: #A8D1E7;
+    color:#fc4053;
+    width: 400px;
+    height: 45px;
+    border: 0;
+    font-size: 16px;
+    box-sizing: content-box;
+    border-radius: 5px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #3b55a8;
+
+}
