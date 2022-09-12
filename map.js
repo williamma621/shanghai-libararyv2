@@ -23,12 +23,12 @@ var dist = new BMapGL.DistrictLayer({
     fillOpacity: 0.25
 });
 map.addDistrictLayer(dist);
-
+console.log(1)
 for (var i = 0; i < info.length; i++) {
     var points = new BMapGL.Point(info[i].y, info[i].x)
     var markers = new BMapGL.Marker(points);
     map.addOverlay(markers); //在地图上标记
-
+    console.log(info[i],info[i].y,info[i].x)
     var opts = {
         position: points,
         width: 400,
