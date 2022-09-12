@@ -26,10 +26,9 @@ body div p {
 
 body div button {
     display:block;
-    margin:0 auto;
     background-color: #A8D1E7;
     color:#fc4053;
-    width: 400px;
+    width: 200px;
     height: 45px;
     border: 0;
     font-size: 16px;
@@ -39,7 +38,20 @@ body div button {
     font-weight: bold;
 }
 
+#button_en {
+    margin-right: 80px;
+    font-family: "sans-serif";
+    font-weight: bold;
+}
+
+#button_ch{
+    margin-left: 80px;
+}
+
 button:hover {
     background-color: #3b55a8;
+}
 
+button:checked{
+    background-color: #355C7D;
 }
