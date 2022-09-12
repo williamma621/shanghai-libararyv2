@@ -1,7 +1,7 @@
 var map = new BMapGL.Map('container'); //创造地图
 map.centerAndZoom(new BMapGL.Point(121.46223, 31.233143), 15); //设置地图中心点
 map.enableScrollWheelZoom(true); //启用鼠标滚轴缩放
-
+console.log(137)
 
 function addClickHandler(content, marker, options) {
             marker.addEventListener("click", function (e) { //监听单击事件
@@ -23,12 +23,10 @@ var dist = new BMapGL.DistrictLayer({
     fillOpacity: 0.25
 });
 map.addDistrictLayer(dist);
-console.log(1)
 for (var i = 0; i < info.length; i++) {
     var points = new BMapGL.Point(info[i].y, info[i].x)
     var markers = new BMapGL.Marker(points);
     map.addOverlay(markers); //在地图上标记
-    console.log(info[i],info[i].y,info[i].x)
     var opts = {
         position: points,
         width: 400,
